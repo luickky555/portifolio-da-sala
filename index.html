@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio - Curso ADS (Turma)</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link para CSS customizado -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+  <!-- Header / Hero -->
+  <header class="bg-orange-500 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex items-center gap-6">
+      <img src="/mnt/data/Captura de tela 2025-09-25 115218.png" alt="Logo da turma" class="w-20 h-20 rounded-lg object-cover shadow-lg hidden sm:block">
+      <div>
+        <h1 class="text-3xl font-extrabold">Portfólio da Turma — Análise e Desenvolvimento de Sistemas</h1>
+        <p class="mt-1 opacity-90">Mostrando como o nosso curso contribui para a sociedade — projetos práticos, inovação e cuidado social.</p>
+      </div>
+      <nav class="ml-auto">
+        <ul class="flex gap-4">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#projetos" class="hover:underline">Projetos</a></li>
+          <li><a href="#alunos" class="hover:underline">Alunos</a></li>
+          <li><a href="#contato" class="hover:underline">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+    <!-- Coluna principal -->
+    <section class="lg:col-span-3 space-y-8">
+
+      <!-- Sobre o curso -->
+      <article id="sobre" class="bg-white p-6 rounded-2xl shadow-md animate-card">
+        <h2 class="text-2xl font-bold mb-2">Sobre o Curso</h2>
+        <p class="text-gray-700">O curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> forma profissionais capazes de projetar, desenvolver e manter soluções digitais com foco em impacto social, sustentabilidade e acessibilidade. Nossa formação combina lógica de programação, arquitetura de software, bancos de dados, experiência do usuário e metodologias ágeis.</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-lg border border-gray-100">
+            <h3 class="font-semibold">Formação Técnica</h3>
+            <p class="text-sm text-gray-600">Competências em desenvolvimento, testes e manutenção de sistemas.</p>
+          </div>
+          <div class="p-4 rounded-lg border border-gray-100">
+            <h3 class="font-semibold">Impacto Social</h3>
+            <p class="text-sm text-gray-600">Projetos voltados à nutrição, agricultura familiar e saúde mental.</p>
+          </div>
+          <div class="p-4 rounded-lg border border-gray-100">
+            <h3 class="font-semibold">Inovação</h3>
+            <p class="text-sm text-gray-600">Integração com APIs, áudio, mensageria e interfaces responsivas.</p>
+          </div>
+        </div>
+
+        <!-- Impact counters -->
+        <div class="mt-6 flex gap-6">
+          <div class="flex-1 bg-orange-50 p-4 rounded-lg text-center">
+            <div class="text-3xl font-bold counter" data-target="3">0</div>
+            <div class="text-sm text-gray-600">Projetos apresentados</div>
+          </div>
+          <div class="flex-1 bg-orange-50 p-4 rounded-lg text-center">
+            <div class="text-3xl font-bold counter" data-target="1200">0</div>
+            <div class="text-sm text-gray-600">Usuários estimados beneficiados</div>
+          </div>
+          <div class="flex-1 bg-orange-50 p-4 rounded-lg text-center">
+            <div class="text-3xl font-bold counter" data-target="1">0</div>
+            <div class="text-sm text-gray-600">Parcerias comunitárias</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projetos -->
+      <article id="projetos" class="space-y-6">
+        <h2 class="text-2xl font-bold">Nossos Projetos</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <div class="project-card bg-white p-4 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-project="cardapio">
+            <h3 class="font-semibold text-lg">Cardápio Alimentar Interativo</h3>
+            <p class="text-sm text-gray-600 mt-2">Interface para montar refeições e ver automaticamente os micronutrientes de cada escolha.</p>
+            <ul class="mt-3 text-xs text-gray-500 list-disc pl-5">
+              <li>Calcula vitaminas e minerais</li>
+              <li>Recomendações por faixa etária</li>
+              <li>Exportar plano alimentar</li>
+            </ul>
+            <div class="mt-4 flex gap-2">
+              <button class="open-btn py-2 px-3 rounded bg-orange-500 text-white" data-target="cardapio">Detalhes</button>
+              <button class="demo-btn py-2 px-3 rounded border" data-demo="cardapio">Abrir Demo</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card bg-white p-4 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-project="agrohub">
+            <h3 class="font-semibold text-lg">AgroHub</h3>
+            <p class="text-sm text-gray-600 mt-2">Plataforma para cada produtor registrar sua fazenda, culturas e comercializar excedentes localmente.</p>
+            <ul class="mt-3 text-xs text-gray-500 list-disc pl-5">
+              <li>Cadastro de fazendas e culturas</li>
+              <li>Mapa e filtros por região</li>
+              <li>Mercado local e trocas</li>
+            </ul>
+            <div class="mt-4 flex gap-2">
+              <button class="open-btn py-2 px-3 rounded bg-orange-500 text-white" data-target="agrohub">Detalhes</button>
+              <button class="demo-btn py-2 px-3 rounded border" data-demo="agrohub">Abrir Demo</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card bg-white p-4 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-project="saudemental">
+            <h3 class="font-semibold text-lg">Portal de Saúde Mental</h3>
+            <p class="text-sm text-gray-600 mt-2">Site com mensagens, áudios de apoio e integração com profissionais (psicólogos) para encaminhamentos.</p>
+            <ul class="mt-3 text-xs text-gray-500 list-disc pl-5">
+              <li>Mensagens e áudios motivacionais</li>
+              <li>Chat de suporte básico</li>
+              <li>Integração com agenda de psicólogos</li>
+            </ul>
+            <div class="mt-4 flex gap-2">
+              <button class="open-btn py-2 px-3 rounded bg-orange-500 text-white" data-target="saudemental">Detalhes</button>
+              <button class="demo-btn py-2 px-3 rounded border" data-demo="saudemental">Abrir Demo</button>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Área de contato / demo -->
+      <article id="demo-area" class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+        <h2 class="text-xl font-bold">Demonstrações Rápidas</h2>
+        <p class="text-sm text-gray-600">Experimente recursos interativos das nossas aplicações.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <div class="p-4 rounded-lg border">
+            <h4 class="font-semibold">Cardápio — Calcule Micronutrientes</h4>
+            <label class="block mt-2 text-xs text-gray-500">Alimento</label>
+            <select id="food-select" class="mt-1 w-full border rounded px-3 py-2">
+              <option value="0">Selecione...</option>
+              <option value="1" data-k="vitamina C:20;ferro:1">Laranja</option>
+              <option value="2" data-k="vitamina A:10;ferro:0.5">Cenoura</option>
+              <option value="3" data-k="vitamina B12:0.2;ferro:2">Carne</option>
+            </select>
+            <div class="mt-3 text-sm text-gray-700" id="food-info">Escolha um alimento para ver micronutrientes.</div>
+          </div>
+
+          <div class="p-4 rounded-lg border">
+            <h4 class="font-semibold">AgroHub — Registrar Fazenda (demo)</h4>
+            <input id="farm-name" placeholder="Nome da Fazenda" class="mt-2 w-full border rounded px-3 py-2" />
+            <input id="farm-crop" placeholder="Principal cultura" class="mt-2 w-full border rounded px-3 py-2" />
+            <button id="register-farm" class="mt-3 w-full py-2 rounded bg-green-500 text-white">Registrar</button>
+            <div class="mt-3 text-sm text-gray-600" id="farm-feedback"></div>
+          </div>
+
+          <div class="p-4 rounded-lg border">
+            <h4 class="font-semibold">Saúde Mental — Mensagens & Áudio</h4>
+            <textarea id="support-msg" placeholder="Escreva uma mensagem de apoio..." class="mt-2 w-full border rounded px-3 py-2"></textarea>
+            <div class="mt-2 flex gap-2">
+              <button id="play-tts" class="py-2 px-3 rounded bg-indigo-600 text-white">Ouvir (TTS)</button>
+              <button id="send-msg" class="py-2 px-3 rounded border">Enviar</button>
+            </div>
+            <div id="mh-feedback" class="mt-3 text-sm text-gray-600"></div>
+          </div>
+
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Barra lateral direita -->
+    <aside class="space-y-6 lg:col-span-1">
+      <div class="sticky top-6 bg-white p-4 rounded-2xl shadow">
+        <h3 class="font-semibold">Funcionalidades do Curso para a Sociedade</h3>
+        <ul class="text-sm text-gray-600 list-disc pl-5 mt-2 space-y-1">
+          <li>Digitalizar serviços locais</li>
+          <li>Melhorar acesso à informação de saúde e nutrição</li>
+          <li>Fomentar comércio local e agricultura familiar</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-4 rounded-2xl shadow">
+        <h3 class="font-semibold">Contato</h3>
+        <p class="text-sm text-gray-600 mt-2">Coordenador do curso: <strong>Prof. (Nome)</strong></p>
+        <a href="#contato" class="inline-block mt-3 py-2 px-3 rounded bg-orange-500 text-white">Enviar mensagem</a>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Lista de alunos -->
+  <section id="alunos" class="max-w-6xl mx-auto px-6 pb-12">
+    <div class="bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Alunos da Turma</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <!-- Listagem dos alunos (exata) -->
+        <div class="p-3 border rounded"><strong>GLENDA ALEXANDRINA PEREIRA TAVARES</strong></div>
+        <div class="p-3 border rounded"><strong>EMANUEL BATISTA SANTOS</strong></div>
+        <div class="p-3 border rounded"><strong>RAFAEL CARVALHO DO NASCIMENTO</strong></div>
+        <div class="p-3 border rounded"><strong>HENDERSON CAVALCANTE SIQUEIRA</strong></div>
+        <div class="p-3 border rounded"><strong>MARIA EDUARDA COSTA DE SOUSA</strong></div>
+        <div class="p-3 border rounded"><strong>Luis Eduardo Araújo Lima</strong></div>
+        <div class="p-3 border rounded"><strong>LUIZ EDUARDO DA SILVA OLIVEIRA</strong></div>
+        <div class="p-3 border rounded"><strong>MAYRA EMANUELLE PEREIRA DA SILVA</strong></div>
+        <div class="p-3 border rounded"><strong>ANTONIO ENZO DE SOUSA MELO</strong></div>
+        <div class="p-3 border rounded"><strong>Caio Felipe do Nascimento Abreu</strong></div>
+        <div class="p-3 border rounded"><strong>MARIA FERNANDA DAS GRAÇAS ARAGÃO SILVINO</strong></div>
+        <div class="p-3 border rounded"><strong>Kauã Ferreira Nascimento</strong></div>
+        <div class="p-3 border rounded"><strong>ISAAC GABRIEL ALVES DA SILVA</strong></div>
+        <div class="p-3 border rounded"><strong>LUANA GABRYELLE CELESTINO DA SILVA</strong></div>
+        <div class="p-3 border rounded"><strong>GABRYEL IBIAPINA DA SILVA</strong></div>
+        <div class="p-3 border rounded"><strong>DAVI IBIAPINA PASSOS</strong></div>
+        <div class="p-3 border rounded"><strong>MARIA LÍVIA DA SILVA LIMA</strong></div>
+        <div class="p-3 border rounded"><strong>HEITOR LUIZ DA SILVA RODRIGUES</strong></div>
+        <div class="p-3 border rounded"><strong>IGOR OTAVIO RIBEIRO LUSTOSA</strong></div>
+        <div class="p-3 border rounded"><strong>Yasmin Reinaldo Nunes Cruz</strong></div>
+        <div class="p-3 border rounded"><strong>José Ricardo do Nascimento Silva</strong></div>
+        <div class="p-3 border rounded"><strong>MILENA SILVA COSTA</strong></div>
+        <div class="p-3 border rounded"><strong>Allan Victor de Almeida Bitencourt</strong></div>
+        <div class="p-3 border rounded"><strong>Raul Victor Matão Facundes</strong></div>
+        <div class="p-3 border rounded"><strong>REBEKA VITORIA SAMPAIO DE CARVALHO</strong></div>
+        <div class="p-3 border rounded"><strong>José Wellington Fortes dos Santos</strong></div>
+        <div class="p-3 border rounded"><strong>Eziel Willames Portela de Araújo Borges</strong></div>
+        <div class="p-3 border rounded"><strong>CICERO WILSON DE MACEDO BARBOSA FILHO</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato" class="bg-gray-900 text-white mt-10">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div>
+          <strong>Portfólio - Análise e Desenvolvimento de Sistemas</strong>
+          <div class="text-sm opacity-80 mt-1">Trabalho de conclusão de módulo — Turma</div>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="text-orange-400 hover:underline">Coordenador</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal template -->
+  <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4">
+    <div class="bg-white w-full max-w-2xl rounded-xl p-6 relative">
+      <button id="close-modal" class="absolute right-4 top-4 text-gray-500 hover:text-gray-800">✕</button>
+      <h3 id="modal-title" class="text-xl font-bold mb-2"></h3>
+      <p id="modal-body" class="text-gray-700"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
